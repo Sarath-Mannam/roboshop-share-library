@@ -5,7 +5,7 @@ def decidepipeline(Map configMap){
     switch(application) {
         case 'nodeJSVM':
             echo "application is NodeJS and VM based "
-            //nodeJSVM(configMap)
+            nodeJSVM(configMap) // or nodeJSVM.call(configMap)
             break
         case 'javaVM':
             javaVM(configMap)
